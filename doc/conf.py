@@ -16,6 +16,10 @@ author = 'andy disch'
 
 extensions = ['sphinx.ext.napoleon', 'sphinx_rtd_theme']
 
+import os
+import sys
+sys.path.insert(0, os.path.abspath('../sphinxdemo/'))
+
 napoleon_google_docstring = True
 napoleon_numpy_docstring = True
 napoleon_include_init_with_doc = False
