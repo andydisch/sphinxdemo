@@ -5,7 +5,9 @@ from enum import Enum
 
 
 class CustomerStatus(Enum):
-    """Enumeration class to represent customer status.
+    """This is an enumeration class to represent the customer status.
+
+    This is the body of the docstring description.
 
     """
 
@@ -17,6 +19,10 @@ class CustomerStatus(Enum):
 class BillItem:
     """Class to represent a bill item with price and quantity.
 
+    Args:
+        price: price of the item.
+        quantity: item quantity.
+
     """
 
     price: int
@@ -26,6 +32,9 @@ class BillItem:
     def total(self) -> int:
         """Returns the total amount for the bill item.
 
+        Returns:
+            The total amount of the bill.
+
         """
         return self.price * self.quantity
 
@@ -33,6 +42,11 @@ class BillItem:
 @dataclass
 class Customer:
     """Class to represent a customer with name, bills and status.
+
+    Args:
+        name: Name of the customer.
+        bills: List of all bills of the customer.
+        status: Current customer status.
 
     """
 
@@ -44,11 +58,17 @@ class Customer:
     def open_bills(self) -> int:
         """Returns the total amount of all open bills.
 
+        Returns:
+            The total amount of all open bills.
+
         """
         return sum(item.total for item in self.bills)
 
     def upgrade(self) -> None:
         """Upgrades customer status to premium.
-        
+
+        Returns:
+            Upgrades the customer status.
+
         """
         self.status = CustomerStatus.PREMIUM
