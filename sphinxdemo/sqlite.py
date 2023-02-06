@@ -7,6 +7,18 @@ import pathlib
 import pandas as pd
 
 
+"""Example sqlite module.
+
+This module demonstrates some features of Sphinx and readthedocs.
+
+Attributes:
+    DATABASE_FILE (str): Module level variables may be documented in
+        either the ``Attributes`` section of the module docstring, or in an
+        inline docstring immediately following the variable.
+
+"""
+
+
 DATABASE_FILE = os.getenv("DATABASE_FILE")
 
 
