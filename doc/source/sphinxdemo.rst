@@ -1,6 +1,9 @@
 sphinxdemo package
 ==================
 
+Submodules
+----------
+
 sphinxdemo.customer module
 --------------------------
 
@@ -13,6 +16,14 @@ sphinxdemo.sqlite module
 ------------------------
 
 .. automodule:: sphinxdemo.sqlite
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: sphinxdemo
    :members:
    :undoc-members:
    :show-inheritance:
